@@ -1,0 +1,878 @@
+2015/01/06 10:11:11 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(54): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/contact
+in /var/www/blog_yii/protected/controllers/SiteController.php (54)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:11:18 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(54): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/contact
+in /var/www/blog_yii/protected/controllers/SiteController.php (54)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:11:20 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii.')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/index.php?r=gii.
+---
+2015/01/06 10:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/index.php?r=gii
+---
+2015/01/06 10:13:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Post" for active record class "Post" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 /var/www/yii/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 /var/www/yii/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 /var/www/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 /var/www/yii/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 /var/www/yii/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#7 /var/www/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/blog_yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog_yii/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/blog_yii/index.php?r=gii/crud/index
+---
+2015/01/06 10:16:46 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('posts')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/index.php?r=posts
+---
+2015/01/06 10:28:40 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:30:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type timestamp: ""
+LINE 1: ...ted", "modified") VALUES ('primeiro', 'um conteudo', '', '')
+                                                                ^. The SQL statement executed was: INSERT INTO "posts" ("title", "content", "created", "modified") VALUES (:yp0, :yp1, :yp2, :yp3).
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:30:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type timestamp: ""
+LINE 1: ...ted", "modified") VALUES ('primeiro', 'um conteudo', '', '')
+                                                                ^. The SQL statement executed was: INSERT INTO "posts" ("title", "content", "created", "modified") VALUES (:yp0, :yp1, :yp2, :yp3)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(76): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#14 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/blog_yii/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog_yii/index.php?r=post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php?r=post/create
+---
+2015/01/06 10:40:02 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php?r=site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:40:42 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:40:46 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:40:48 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:41:47 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:41:51 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii//site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:41:55 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:41:58 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(54): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/contact
+in /var/www/blog_yii/protected/controllers/SiteController.php (54)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:42:03 [error] [php] include(ContactForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(54): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/site/contact
+in /var/www/blog_yii/protected/controllers/SiteController.php (54)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 10:42:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page/view=...')
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/blog_yii/site/page/view=about
+---
+2015/01/06 10:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page/about')
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/blog_yii/site/page/about
+---
+2015/01/06 10:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "home" was not found.' in /var/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('home')
+#1 /var/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/blog_yii/site/page/?view=home
+---
+2015/01/06 11:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('posts')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/posts
+---
+2015/01/06 11:02:33 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:06:19 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:06:25 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:06:41 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:06:45 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(85): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:07:24 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(85): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:08:00 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(85): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:08:40 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(87): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:08:41 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(87): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:08:49 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/PostController.php(17): CComponent->__set('meu_teste', 'bazinga')
+#1 /var/www/yii/framework/web/CWebApplication.php(359): PostController->__construct('post', NULL)
+#2 /var/www/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('post/create')
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#4 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/blog_yii/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:09:11 [error] [exception.CException] exception 'CException' with message 'PostController cannot find the requested view "create".' in /var/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#1 /var/www/blog_yii/protected/controllers/PostController.php(88): CController->render('create', Array)
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#6 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#7 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#8 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/blog_yii/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:09:30 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(86): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:10:01 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/PostController.php(22): CComponent->__set('meu_teste', 'bazinga')
+#1 /var/www/yii/framework/web/CController.php(265): PostController->filters()
+#2 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#3 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#4 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/blog_yii/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:10:50 [error] [exception.CException] exception 'CException' with message 'Property "PostController.meu_teste" is not defined.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/blog_yii/protected/views/post/_form.php(25): CComponent->__get('meu_teste')
+#1 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#2 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#3 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#4 /var/www/blog_yii/protected/views/post/create.php(15): CController->renderPartial('_form', Array)
+#5 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/blog_y...')
+#6 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/blog_y...', Array, true)
+#7 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/blog_y...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/blog_yii/protected/controllers/PostController.php(85): CController->render('create', Array)
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#14 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#16 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/blog_yii/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:23:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of input
+LINE 1: SELECT * FROM "posts" "t" WHERE Array
+                                             ^. The SQL statement executed was: SELECT * FROM "posts" "t" WHERE Array.
+in /var/www/blog_yii/protected/controllers/PostController.php (71)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:23:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42601]: Syntax error: 7 ERROR:  syntax error at end of input
+LINE 1: SELECT * FROM "posts" "t" WHERE Array
+                                             ^. The SQL statement executed was: SELECT * FROM "posts" "t" WHERE Array' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 /var/www/yii/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/blog_yii/protected/controllers/PostController.php(71): CActiveRecord->findAll(Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#10 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/blog_yii/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/post/
+---
+2015/01/06 11:28:01 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:28:14 [error] [php] include(LoginForm.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/blog_yii/protected/controllers/SiteController.php(80): spl_autoload_call()
+#1 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/blog_yii/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog_yii/index.php/site/login
+in /var/www/blog_yii/protected/controllers/SiteController.php (80)
+in /var/www/blog_yii/index.php (13)
+2015/01/06 11:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index_test.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index_test.php')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/index_test.php
+---
+2015/01/06 11:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index_test.php".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index_test.php')
+#1 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/blog_yii/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog_yii/index_test.php
+---
+2015/01/07 21:15:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type timestamp: ""
+LINE 1: ...ent", "created", "modified") VALUES ('fdf', 'dfdsf', '', '')
+                                                                ^. The SQL statement executed was: INSERT INTO "posts" ("title", "content", "created", "modified") VALUES (:yp0, :yp1, :yp2, :yp3).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 21:15:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  invalid input syntax for type timestamp: ""
+LINE 1: ...ent", "created", "modified") VALUES ('fdf', 'dfdsf', '', '')
+                                                                ^. The SQL statement executed was: INSERT INTO "posts" ("title", "content", "created", "modified") VALUES (:yp0, :yp1, :yp2, :yp3)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:24:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{posts}}" for active record class "Post" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/blog_yii/protected/controllers/PostController.php(69): CActiveRecord->__construct()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+---
+2015/01/07 22:24:57 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{posts}}" for active record class "Post" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/blog_yii/protected/controllers/PostController.php(69): CActiveRecord->__construct()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+---
+2015/01/07 22:25:12 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:12 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (4, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (4, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:25:26 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:26 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (5, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:25:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (5, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:26:39 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:26:39 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:26:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (8, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:26:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (8, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:27:30 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:30 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (9, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (9, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:27:36 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:36 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:27:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
+2015/01/07 22:28:11 [warning] [application] Failed to set unsafe attribute "title" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:28:11 [warning] [application] Failed to set unsafe attribute "content" of "Post".
+in /var/www/blog_yii/protected/controllers/PostController.php (76)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:28:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (12, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT).
+in /var/www/blog_yii/protected/controllers/PostController.php (77)
+in /var/www/blog_yii/index.php (13)
+2015/01/07 22:28:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "title" violates not-null constraint
+DETAIL:  Failing row contains (12, null, null, null, null).. The SQL statement executed was: INSERT INTO "posts" ("id") VALUES (DEFAULT)' in /var/www/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /var/www/blog_yii/protected/controllers/PostController.php(77): CActiveRecord->save()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), NULL)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#9 /var/www/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/blog_yii/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog_yii/index.php/post/create
+HTTP_REFERER=http://localhost/blog_yii/index.php/post/create
+---
